@@ -18,17 +18,9 @@ namespace Communication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+            SmtpServer.Port = 587;
+            SmtpServer.Credentials = new System.Net.NetworkCredential();
         }
     }
 }

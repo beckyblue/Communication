@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="from">
-            <h1>Communication Board Application</h1>
+            <h1>Communication Application</h1>
         </div>
         To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="MailTo" runat="server" OnTextChanged="TextBox1_TextChanged" Width="319px" AutoCompleteType="Email" TextMode="Email"></asp:TextBox>
@@ -22,6 +22,8 @@
         <br />
         <br />
         <asp:TextBox ID="MessageTextBox" runat="server" Height="241px" OnTextChanged="TextBox3_TextChanged" Width="389px"></asp:TextBox>
+        <br />
+        <asp:FileUpload ID="FileUpload1" runat="server" />
         <br />
         <br />
         <asp:Button ID="SendButton" runat="server" OnClick="Button1_Click" Text="Send" Width="387px" />
